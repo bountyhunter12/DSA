@@ -17,8 +17,8 @@ void rev(vector<int> &arr){
 
 
 int32_t main() {
-    int t;
-    cin >> t;
+    int t=1;
+    // cin >> t;
 
     while (t--) {
         vector<int> arr = { 1, 4, 3, 2, 6, 5 };
