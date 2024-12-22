@@ -1,0 +1,1 @@
+{"name":"Local: reverse","url":"c:\\Users\\User\\Documents\\DSA\\DSA\\Array\\reverse.cpp","tests":[{"id":1734883016620,"input":"1 4 3 2 6 5","output":"5 6 2 3 4 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\User\\Documents\\DSA\\DSA\\Array\\reverse.cpp","group":"local","local":true}
