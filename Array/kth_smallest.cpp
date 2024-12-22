@@ -9,7 +9,7 @@ const int N = 20005;
 void kth(vector<int> &arr, int k){
     int n = arr.size();
 
-    for(int i =0; i < n; i++)
+    for(int i =0; i < n-1; i++)
     {
         int mini = i;
 
