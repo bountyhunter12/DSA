@@ -10,5 +10,9 @@ Kick start Data Structure with
 2. Maximum and minimum of an array: Given an array of size N. The task is to find the maximum and the minimum element of the array using the minimum number of comparisons.
 
 3. Kth Smallest: Given an array arr[] and an integer k where k is smaller than the size of the array, the task is to find the kth smallest element in the given array.
+Follow up: Don't solve it using the inbuilt sort function.
 
-  Follow up: Don't solve it using the inbuilt sort function.
+4. Sort 0s, 1s and 2s: Given an array arr[] containing only 0s, 1s, and 2s. Sort the array in ascending order.
+
+
+
