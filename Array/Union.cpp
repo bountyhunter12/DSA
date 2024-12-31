@@ -6,48 +6,19 @@ using namespace std;
 #define endl "\n"
 const int N = 20005;
 
-vector<int> sortnp(vector<int> &a, vector<int> &b){
-    int n = a.size();
-    int m = b.size();
+int sortnp(vector<int> &a, vector<int> &b){
+    unordered_set<int> c;
 
-    int i=0,j=0;
-    vector<int> c;
-    while (i < n && j < m)
-    {
-        if(a[i] < b[j]){
-            c.push_back(a[i]);
-            i++;
+        for (int num : a) {
+            c.insert(num);
         }
-        else if(b[j] < a[i]){
-            c.push_back(b[j]);
-            j++;
-        }else{
-            c.push_back(a[i]);
-            i++;
-            j++;
-        }
-        
-    }
-    while (i < n) {
-
-      	if(i > 0 && a[i - 1] == a[i]) {
-            i++;
-            continue;
-        }
-      	c.push_back(a[i]);
-      	i++;
-    }
-    while (j < m) {
-      	
-      	if(j > 0 && b[j - 1] == b[j]) {
-            j++;
-            continue;
-        }
-      	c.push_back(b[j]);
-      	j++;
-    }
     
-    return c;
+        for (int num : b) {
+            c.insert(num);
+        }
+    
+        
+        return c.size();
     
 
 
@@ -59,16 +30,10 @@ int32_t main() {
     // cin >> t;
 
     while (t--) {
-        vector<int> a = { 1, 2, 3, 4, 5};
-        vector<int> b = { 1, 2, 3};
-        int n = a.size();
-        int m = b.size();
+        vector<int> a = { 178,968,724,752,464,884,831,618,388,378,469,518,972,721,945,446,215,957,144,68,833,722,796,421,406,896,79,592,274,23,614,667,121,645,315,576};
+        vector<int> b = { 346, 494, 616, 220, 817, 147, 49, 969, 278, 550, 401, 684, 872, 933, 735, 505, 405, 605, 355, 621, 814, 80, 660, 757, 47, 466, 396, 869, 517, 201, 302, 884, 155, 675, 574, 190, 246, 517, 794, 873, 528, 241, 776, 868, 346, 951, 712, 485, 741, 487, 51, 162, 946, 253, 260, 683, 552, 358, 669, 630, 143, 587, 485, 770, 403, 692, 714, 160, 363, 615, 122, 246, 634, 337, 22, 798, 894, 131, 64, 368, 415, 761, 204, 435, 586, 327, 565, 33, 759, 60, 386, 588, 735, 932, 441, 859};
 
-
-        vector<int> c;
-        c = sortnp(a,b);
-
-        cout << c.size() << endl;
+        cout << sortnp(a,b) << endl;
 
     }
 }
